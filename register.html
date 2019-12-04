@@ -1,0 +1,205 @@
+<head>
+	<style>
+
+body {
+  background: #999;
+  padding: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("C:\\Users\\slk\\Desktop\\apartment/5.jpg ") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-filter: blur(5px);    
+}
+
+
+h3{
+ position: relative;
+  width: 300px;
+  margin: 5 auto;
+  font-family:monotype corsiva;
+  font-size:30px;
+  color:hsl(0, 100%, 25%);
+
+  
+}
+form {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  background: rgba(130,130,130,.3);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255,255,255,.4);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);
+}
+
+form input, form button,select {
+  width: 600px;
+  border: 1px solid;
+  border-bottom-color: rgba(255,255,255,.5);
+  border-right-color: rgba(60,60,60,.35);
+  border-top-color: rgba(60,60,60,.35);
+  border-left-color: rgba(80,80,80,.45);
+  background-color: rgba(0,0,0,.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  font: bold .875em/1.25em "Open Sans Condensed", sans-serif;
+  letter-spacing: .075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  margin-bottom: 19px;
+}
+
+form input[type=checkbox]
+{
+	 border: 1px solid;
+	 
+}
+
+form input:focus { background-color: rgba(0,0,0,.4); }
+
+
+::-webkit-input-placeholder { color: #ccc;  }
+::-moz-placeholder { color: #ccc; }
+:-ms-input-placeholder { color: #ccc;  }
+
+form input[type=submit] {
+  width: 600px;
+  margin-bottom: 0;
+  color: #3f898a;
+  letter-spacing: .05em;
+  text-shadow: 0 1px 0 #133d3e;
+  text-transform: uppercase;
+  background: #225556;
+  border-top-color: #9fb5b5;
+  border-left-color: #608586;
+  border-bottom-color: #1b4849;
+  border-right-color: #1e4d4e;
+  cursor: pointer;
+}
+}
+	</style>
+</head>
+<body>
+<div id="bg"></div>
+
+<h3>Register your Interest..!</h3>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00D2w000000DUkg">
+<input type=hidden name="retURL" value="https://689cloud.com/wp-content/uploads/2018/11/thankyou-for-registration-confirmation-temp-eng.png">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="radhasharu97@gmail.com">                                         -->
+<!--  ----------------------------------------------------------------------  -->
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6 col-sm-12">
+
+<div class="form-group row">
+<label for="salutation"class="col-sm-2 col-form-label">Salutation</label>
+<div class="col-sm-10">
+<select  id="salutation" name="salutation" class="form-control"><option value="">--None--</option><option value="Mr.">Mr.</option>
+<option value="Ms.">Ms.</option>
+<option value="Mrs.">Mrs.</option>
+<option value="Dr.">Dr.</option>
+<option value="Prof.">Prof.</option>
+</select><br>
+</div>
+</div>
+
+<div class="form-group row">
+<label for="first_name" class="col-sm-2 col-form-label">First Name</label>
+<div class="col-sm-10">
+<input  id="first_name" class="form-control" maxlength="40" name="first_name" size="20" type="text" required />
+</div>
+</div>
+
+<div class="form-group row">
+<label for="last_name" class="col-sm-2 col-form-label">Last Name</label>
+<div class="col-sm-10">
+<input  id="last_name" class="form-control" maxlength="80" name="last_name" size="20" type="text" required />
+</div>
+</div>
+
+<div class="form-group row">
+<label for="email" class="col-sm-2 col-form-label">Email</label>
+<div class="col-sm-10">
+<input  id="email"  class="form-control" maxlength="80" name="email" size="20" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+title="characters followed by an @ sign, followed by more characters, and then a '.' then add at least 2 letters from a to z" required/><br>
+</div>
+</div>
+
+<div class="form-group row">
+<label for="phone" class="col-sm-2 col-form-label">Phone</label>
+<div class="col-sm-10">
+<input  id="phone" class="form-control" maxlength="40" name="phone" size="20" type="tel" pattern="^\d{10}$" title="Format: xxxxxxxxxx" required/><br>
+</div>
+</div>
+
+
+
+
+<div class="form-group row">
+<label for="company" class="col-sm-2 col-form-label">Company</label>
+<div class="col-sm-10">
+<input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
+</div>
+</div>
+
+
+
+
+<div class="form-group row">
+<label for="00N2w000000ncUo" class="col-sm-2 col-form-label">Buy/Rent</label>
+<div class="col-sm-10">
+<select  id="00N2w000000ncUo" class="form-control" name="00N2w000000ncUo" title="Buy/Rent" required><option value="">--None--</option><option value="Buy">Buy</option>
+<option value="Rent">Rent</option>
+</select><br>
+</div>
+</div>
+
+
+
+
+
+<div class="form-group row">
+<label for="00N2w000000oVBl" class="col-sm-2 col-form-label">Home Loan </label>
+<div class="col-sm-10">
+<select  id="00N2w000000oVBl"class="form-control" name="00N2w000000oVBl" title="Home Loan" required><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+</div>
+</div>
+
+
+
+<div class="form-group row">
+<label class="col-sm-2 col-form-label"></label>
+<div class="col-sm-10">
+<input type="submit" class="btn btn-primary " name="submit" value="ENQUIRE NOW" >
+</div>
+</div>
+
+
+
+
+
+
+
+</form>
+
+</body>
